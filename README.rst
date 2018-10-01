@@ -136,3 +136,8 @@ There are also unit tests here::
     $ pytest
 
 Which will verify that most of the core components are working correctly.
+
+Tests can be executed against different Python versions handled by 
+`tox https://tox.readthedocs.io/en/latest/` with the command::
+
+   $ tox 
