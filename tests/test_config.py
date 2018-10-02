@@ -72,3 +72,16 @@ Host *
     f = StringIO(test_config_file)
     config = parse_ssh_config(f)
     assert config.lookup("anything-else").as_int("port") == 3333
+
+def test_SSHConfig_match_supported_SSHConfigDict_instances():
+    test_config_file = """\
+Match Host 10.0.* User ec2-user
+    User ec2-user
+    Port 2222
+
+Host *
+    Port 3333
+    """
+    f = StringIO(test_config_file)
+    config = parse_ssh_config(f)
+    assert config.lookup('foo.example.com')['user'] != 'ec2-user'
