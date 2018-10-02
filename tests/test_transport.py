@@ -28,7 +28,6 @@ import socket
 import time
 import threading
 import random
-from hashlib import sha1
 import unittest
 from mock import Mock
 
@@ -41,7 +40,6 @@ from paramiko import (
     SSHException,
     ChannelException,
     Packetizer,
-    Channel,
     AuthHandler,
 )
 from paramiko import AUTH_FAILED, AUTH_SUCCESSFUL
@@ -55,7 +53,6 @@ from paramiko.common import (
     MAX_WINDOW_SIZE,
     DEFAULT_WINDOW_SIZE,
     DEFAULT_MAX_PACKET_SIZE,
-    MSG_NAMES,
     MSG_UNIMPLEMENTED,
     MSG_USERAUTH_SUCCESS,
 )

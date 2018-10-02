@@ -26,8 +26,6 @@ do test file operations in (so no existing files will be harmed).
 import os
 import socket
 import sys
-import threading
-import unittest
 import warnings
 from binascii import hexlify
 from tempfile import mkstemp
@@ -42,7 +40,7 @@ from paramiko.sftp_attr import SFTPAttributes
 
 from .util import needs_builtin
 from .stub_sftp import StubServer, StubSFTPServer
-from .util import _support, slow
+from .util import slow
 
 
 ARTICLE = """

@@ -21,7 +21,6 @@ A stub SFTP server for loopback SFTP testing.
 """
 
 import os
-import sys
 
 from paramiko import (
     ServerInterface,

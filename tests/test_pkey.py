@@ -25,7 +25,6 @@ import unittest
 import os
 from binascii import hexlify
 from hashlib import md5
-import base64
 
 from paramiko import RSAKey, DSSKey, ECDSAKey, Ed25519Key, Message, util
 from paramiko.py3compat import StringIO, byte_chr, b, bytes, PY2

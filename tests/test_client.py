@@ -37,7 +37,6 @@ from pytest_relaxed import raises
 
 import paramiko
 from paramiko.pkey import PublicBlob
-from paramiko.common import PY2
 from paramiko.ssh_exception import SSHException, AuthenticationException
 
 from .util import _support, slow

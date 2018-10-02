@@ -28,7 +28,6 @@ import random
 import struct
 import sys
 import time
-import unittest
 
 from paramiko.common import o660
 
